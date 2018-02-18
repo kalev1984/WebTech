@@ -1,0 +1,80 @@
+body {
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    color: #333;
+    width: 35em;
+}
+
+#menu {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    padding: 0.5em;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#content {
+    margin-top: 1em;
+    min-height: 20em;
+}
+
+#footer {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    margin-top: 1em;
+    padding: 0.5em;
+    text-align: right;
+}
+
+.list-table {
+    margin: 0px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.list-table th {
+    font-weight: normal;
+    padding: 0em 1em;
+    border-bottom: 2px solid #000;
+}
+
+.list-table td {
+    padding: 9px 8px 0px 8px;
+}
+
+td.buttons {
+    text-align: right;
+}
+
+#message-block, #error-block {
+    color: #000;
+    background-color: #EEffEE;
+    border: 3px solid #00cc00;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#error-block {
+    background-color: #ffEEEE;
+    border: 3px solid #ff0000;
+}
+
+.form-table {
+    width: 100%;
+}
+
+.form-table td {
+    text-align: right;
+    width: 50%;
+}
+
+input {
+    width: 22em;
+}
+
+input[type='submit'] {
+    width: 8em;
+}
