@@ -6,8 +6,8 @@
     <title>Title</title>
 </head>
 <body>
-<div id="menu"><a href="?cmd=list_page" id="list-page-link">Nimekiri</a>  |
-    <a href="?cmd=add_page" id="add-page-link">Lisa</a>
+<div id="menu"><a href="index.php" id="list-page-link">Nimekiri</a>  |
+    <a href="add.php" id="add-page-link">Lisa</a>
 </div>
 <table class="my-table">
     <thead>
@@ -15,6 +15,11 @@
         <th scope="col">Eesnimi</th>
         <th scope="col">Perenimi</th>
         <th scope="col">Telefon</th>
+    </tr>
+    <tr tpl-foreach="$order_lines as $line">
+        <th> {{ $line->firstName }}</th>
+        <th> {{ $line->lastName }}</th>
+        <th> {{ $line->phone }}</th>
     </tr>
     </thead>
     <tbody>

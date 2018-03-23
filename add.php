@@ -6,15 +6,15 @@
     <title>Title</title>
 </head>
 <body>
-    <div id="menu"><a href="?cmd=list_page" id="list-page-link">Nimekiri</a>  |
-<a href="?cmd=add_page" id="add-page-link">Lisa</a>
+    <div id="menu"><a href="index.php" id="list-page-link">Nimekiri</a>  |
+<a href="add.php" id="add-page-link">Lisa</a>
 </div>
 
     <div id="content">
 
 
 
-<form method="post" action="?cmd=save">
+<form method="post" action="writefile.php">
 
     <input type="hidden" name="id" value="">
 
@@ -30,15 +30,7 @@
         </tr>
         <tr>
             <td>Telefonid:</td>
-            <td><input name="phone1" value=""></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input name="phone2" value=""></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input name="phone3" value=""></td>
+            <td><input name="phone" value=""></td>
         </tr>
         <tr>
             <td colspan="2"><br>
