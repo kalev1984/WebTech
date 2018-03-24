@@ -8,6 +8,12 @@
 require_once 'C:/wamp64/www/phonebook/lib/tpl.php';
 require_once 'read.php';
 
+$line = isset($_POST['firstName']) . "," . isset($_POST['lastName']) . "," . isset($_POST['phone']) . "\n";
+$write = file_put_contents('C:/wamp64/www/phonebook/data/data.txt', $line, FILE_APPEND | LOCK_EX);
+if ($write === false) {
+    die("cannot write!");
+}
+
 $lines = file('C:/wamp64/www/phonebook/data/data.txt');
 
 $order_lines = [];

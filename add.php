@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/phonebook.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -14,7 +14,7 @@
 
 
 
-<form method="post" action="writefile.php">
+<form method="post" action="index.php">
 
     <input type="hidden" name="id" value="">
 
