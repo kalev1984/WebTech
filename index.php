@@ -5,16 +5,16 @@
  * Date: 23.03.2018
  * Time: 19:57
  */
-require_once 'C:/wamp64/www/phonebook/lib/tpl.php';
+require_once 'lib/tpl.php';
 require_once 'read.php';
 
 $line = $_POST['firstName'] . "," . $_POST['lastName'] . "," . $_POST['phone'] . "\n";
-$write = file_put_contents('C:/wamp64/www/phonebook/data/data.txt', $line, FILE_APPEND | LOCK_EX);
+$write = file_put_contents('data/data.txt', $line, FILE_APPEND | LOCK_EX);
 if ($write === false) {
     die("cannot write!");
 }
 
-$lines = file('C:/wamp64/www/phonebook/data/data.txt');
+$lines = file('data/data.txt');
 
 $order_lines = [];
 foreach ($lines as $line) {
