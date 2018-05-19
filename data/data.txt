@@ -7,7 +7,4 @@ Sain,vist,Valmis
 kalev,kalev,123
 kalev,kalev,123
 Kas,Nüüd,töötab?
-eesnimi,perenimi,phone1
-123,123,123
-123,123,13
 Kalev,Kilumets,53543464
