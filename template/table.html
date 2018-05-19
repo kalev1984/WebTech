@@ -17,7 +17,7 @@
         <th scope="col">Telefon</th>
     </tr>
     <tr tpl-foreach="$order_lines as $line">
-        <th> {{ $line->firstName }}</th>
+        <th> <a href="?cmd=edit&amp;id={{ $line->id }}"> {{ $line->firstName }} </a></th>
         <th> {{ $line->lastName }}</th>
         <th> {{ $line->phone }}</th>
     </tr>
